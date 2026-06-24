@@ -203,26 +203,35 @@ body {
 
 }
 
-.brand-card img:hover {
+.brand-card {
+    background-color: #1f1f1f;
+    border: 2px solid #5b2333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
 
-  transform: scale(1.13);
-
-    box-shadow:
-
-        0 0 10px #5b2333,
-
-        0 0 20px #5b2333,
-
-        0 0 30px #b04a6f;
-
+    transition: 0.3s;
 }
 
-.brand-card h3{
-
-  text-align: center;
-
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(91, 35, 51, 0.7);
 }
 
+.brand-card h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.brand-card p {
+    color: #cfcfcf;
+    margin: 8px 0;
+}
+.brand-card p:last-child {
+    color: #ff6b9d;
+    font-weight: bold;
+}
 max-width: 768px {
 
     .main-layout {
