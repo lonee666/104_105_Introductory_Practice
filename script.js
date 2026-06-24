@@ -84,3 +84,27 @@ portfolioData.projects.forEach(project => {
 
 console.log("Уникальные технологии:");
 console.log(technologiesSet);
+const galleryContainer = document.querySelector(".brands-grid");
+
+portfolioData.projects.forEach(project => {
+
+const card = document.createElement("article");
+card.classList.add("brand-card");
+
+const title = document.createElement("h3");
+title.textContent = project.title;
+
+const category = document.createElement("p");
+category.textContent = "Категория: " + project.category;
+
+const likes = document.createElement("p");
+likes.textContent = "Лайки: " + project.likes;
+
+card.append(title);
+card.append(category);
+card.append(likes);
+
+galleryContainer.append(card);
+
+
+});
